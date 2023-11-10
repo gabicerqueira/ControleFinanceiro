@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    background-image: url(img/brasil.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+@font-face {
+    font-family: 'Mooli';
+    src: url(fonts/Mooli-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Unb';
+    src: url(fonts/Unbounded-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    margin-top: 35px;
+}
+
+header img{
+    width: 60px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font: 600 24px 'Mont', sans-serif;
+}
+
+p{
+    font: 600 16px 'Mont', sans-serif;
+}
+
+.texto{
+    margin-left: 10px;
+}
+
+.resumo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 25px 50px 0 50px;
+}
+
+.div-entrada,
+.div-saida,
+.div-total{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 0 20px;
+    background-color: white;
+    border: 1px solid rgb(152, 152, 152);
+    border-radius: 15px;
+    width: 150px;
+    padding: 10px 0 10px 10px;
+    font: 500 16px 'Mont', sans-serif;
+}
+
+span{
+    font-weight: 600;
+}
+
+.input{
+    display: flex;
+    margin: 20px 10px 0 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.divDesc,
+.divValor{
+    flex-direction: column;
+    display: flex;
+    margin: 5px 20px;
+}
+
+input{
+    background-color: white;
+    border: 1px solid rgb(113, 113, 113);
+    border-radius: 5px;
+    padding: 5px;
+    font: 500 16px 'Mont', sans-serif;
+    outline: none;
+}
+
+label{
+    font: 600 16px 'Mont', sans-serif;
+    margin-bottom: 5px;
+}
+
+select{
+    background-color: white;
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+    font: 500 14px 'Mont', sans-serif;
+    cursor: pointer;
+}
+
+.divTipo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+.entrada-incluir{
+    display: flex;
+    flex-direction: column;
+}
+
+.divTipo button{
+    background-color: #F2A649;
+    padding: 6px 25px;
+    border-radius: 8px;
+    font: 500 14px 'Mont', sans-serif;
+    cursor: pointer;
+}
+
+.divTipo button,
+select{
+    margin: 0 5px;
+}
+
+.divTabela{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+th, td{
+    padding: 0 60px;
+    font: 600 16px 'Mont', sans-serif;
+}
+
+th{
+    text-align: left;
+}
+
+td{
+    font: 500 15px 'Mont', sans-serif;
+}
+
+.columnTipo img{
+    width: 25px;
+}
+
+i{
+    font-size: 18px;
+}

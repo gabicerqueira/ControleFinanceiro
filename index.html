@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/65d3d9eac0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="img/arara.png" alt="arara">
+            <div class="texto">
+                <h1>BEM-VINDA GABI</h1>
+                <p>Esse é seu controle financeiro</p>
+            </div>
+        </div>
+        <!-- <div class="folha">
+            <img src="img/folha.png" alt="folha">
+            <img src="img/folha.png" alt="folha">
+        </div> -->
+    </header>
+
+    <main>
+        <div class="resumo">
+            <div class="div-entrada">
+                Entradas: R$
+                <span class="entradas">0.00</span>
+            </div>
+            <div class="div-saida">
+                Saídas: R$
+                <span class="saidas">0.00</span>
+            </div>
+            <div class="div-total">
+                Total: R$
+                <span class="total">0.00</span>
+            </div>
+        </div>
+
+        <div class="novoItem">
+            <div class="input">
+                <div class="divDesc">
+                    <label for="desc">Descrição</label>
+                    <input type="text" id="desc">
+                </div>
+                <div class="divValor">
+                    <label for="valor">Valor</label>
+                    <input type="text" id="valor">
+                </div>
+            </div>
+            <div class="divTipo">
+                <div class="entrada-incluir">
+                    <label for="tipo">Tipo</label>
+                    <select id="tipo">
+                        <option class="option-entrada">Entrada</option>
+                        <option>Saída</option>
+                    </select>
+                </div>
+                <button id="btnNovo">Incluir</button>
+            </div>
+        </div>
+        <div class="divTabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th class="columnValor">Valor</th>
+                        <th class="columnTipo">Tipo</th>
+                        <th class="columnAcao"></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
